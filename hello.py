@@ -54,3 +54,16 @@
 # print(type(6//2))
 
 # print(type(3+3.0))
+
+
+
+# dict={
+#     "hello":"oii",
+#     "ng":"dfg"}  
+# print("oii" in dict) #output=?
+
+# a=6
+# b=2
+
+# c=a/b
+# print(type(c))
