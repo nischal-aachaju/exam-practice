@@ -67,3 +67,13 @@
 
 # c=a/b
 # print(type(c))
+
+
+# a = [1,2,3]
+# b = a
+# print(a is b) # 
+# a = [1,2,3]
+# b = [1,2,3]
+# print(a is b) # output=?
+# print(a==b) # optput=?
+
