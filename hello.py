@@ -41,3 +41,16 @@
 # rev_word=" ".join(rev_word)
 # rev_word=rev_word.title()
 # print(rev_word)
+
+
+# c=5
+# b=2
+
+# # c=c//b
+# c//=b
+
+# print(c)
+
+# print(type(6//2))
+
+# print(type(3+3.0))
