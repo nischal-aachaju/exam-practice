@@ -24,3 +24,9 @@
 # a=str.maketrans(clean)
 # num="+"+num.translate(a)
 # print(num)
+
+
+# word="joNH ceNA"
+# word=word.title()
+
+# print(word.title())
