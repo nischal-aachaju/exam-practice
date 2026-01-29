@@ -15,3 +15,12 @@
 # strong_passord=password.translate(translator)
 # strong_passord=strong_passord+"0##9"
 # print(strong_passord)
+
+# num=input("Enter number")
+
+# num="+977  9849-241-223"
+# clean={"-":"",",":"","+":""," ":""}
+
+# a=str.maketrans(clean)
+# num="+"+num.translate(a)
+# print(num)
