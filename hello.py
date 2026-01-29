@@ -30,3 +30,14 @@
 # word=word.title()
 
 # print(word.title())
+
+
+
+# word=" I love south indian movies"
+# word=word.strip()
+# word=word.split()
+
+# rev_word=word[-1::-1]
+# rev_word=" ".join(rev_word)
+# rev_word=rev_word.title()
+# print(rev_word)
