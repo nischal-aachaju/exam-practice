@@ -77,3 +77,37 @@
 # print(a is b) # output=?
 # print(a==b) # optput=?
 
+# a={*()}
+# a.add("A")
+# print(a)
+
+# print(type(a))
+
+
+# months = {
+# 1: "January",
+# 2: "February",
+# 3: "March",
+# 4: "April",
+# 5: "May",
+# 6: "June",
+# 7: "July",
+# 8: "August",
+# 9: "September",
+# 10: "October",
+# 11: "November",
+# 12: "December"
+# }
+
+
+# try:
+    
+#     num=int(input("enter num: "))
+#     if num in months:
+#         print(f"The month is {months[num]}")
+
+#     else :
+#         print(f"enter between 1 to 12")
+        
+# except ValueError:
+#     print("Please enter num")
