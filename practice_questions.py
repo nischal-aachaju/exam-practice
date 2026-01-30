@@ -175,3 +175,147 @@
 #     else:
 #         content_ratings[rating]=1
 # print(content_ratings)
+
+# sum=0
+
+# i=2
+
+# while i<5:
+
+#     i=i+1
+
+#     sum=sum-2
+
+#     print(i)
+
+# print(sum)
+
+# a=[3,5,7,9] 
+
+# sum=0
+
+# i=2
+
+# while i<len(a)-1:
+
+#     i=i+1
+
+#     sum=sum+a[3]
+
+# print(sum)
+# a=[3,5,7,9] 
+
+# sum=0
+
+# i=0
+
+# while i<2:
+
+#     if i==2:
+
+#         sum=sum+a[i]
+
+#         i=i+1
+
+#         continue
+
+#     sum=sum+a[i]
+
+#     i=i+1
+
+# print(sum)
+# sum=0
+
+# i=5
+
+# while i!=0:
+
+#     if i==2:
+
+#         sum=sum+1
+
+#         i=i-1
+
+#         continue
+
+#     i=i-1
+
+# # print(sum)  
+# a=[13,17,15,19]
+
+# sum=0
+
+# i=3
+
+# while i!=0:
+
+#     sum=sum+a[i]
+
+#     i=i-1
+
+# print(sum)
+
+# i = 1
+
+# while True:
+
+#     if i%7 == 0:
+
+#         break
+
+#     print(i)
+
+#     i += 1
+
+
+# i = 1
+
+# while True:
+
+#     if i%2 == 0:
+
+#         break
+
+#     print(i)
+
+#     i += 2
+
+# i = 0  
+
+# while i < 5:  
+
+#     print(i)  
+
+#     i += 1  
+
+#     if i == 3:  
+
+#         break  
+
+#     else:  
+
+#         print(45)
+
+# var1 = -2
+
+# var2 = 0
+
+# while var1 != 0:
+
+#     var1 = var1 + 1
+
+#     var2 = var2 - 1
+
+# print("var1: " + str(var1) + " var2 " + str(var2))
+# n = 10
+
+# answer = 1
+
+# while n > 0:
+
+#     answer = answer + n
+
+#     n = n - 1
+
+# print(answer)
+
