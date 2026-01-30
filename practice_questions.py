@@ -110,3 +110,40 @@
 # d=[1,2,3]
 
 # print(c is d)
+
+
+# a=5
+
+# if (a & 1)==0:
+#     print("even")
+# else:
+#     print("odd")
+    
+    
+# a=2
+# b=1
+# print(a,b)
+# # a=a-b
+# # b=b+a
+# # a=a+b
+
+# # print(a,b)
+
+# a=a^b
+# b=a^b
+# a=a^b
+
+# print(a,b)
+
+
+# a=14>>1
+# print(a)
+
+# print(~(-19))
+std={}
+for i in range(3):
+    name=input("Enter name:")
+    if name not in std:
+        contact=input("Enter number:")
+        std[name]=contact
+print(std)
