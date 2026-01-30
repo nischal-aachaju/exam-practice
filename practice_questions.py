@@ -140,10 +140,38 @@
 # print(a)
 
 # print(~(-19))
-std={}
-for i in range(3):
-    name=input("Enter name:")
-    if name not in std:
-        contact=input("Enter number:")
-        std[name]=contact
-print(std)
+# std={}
+# for i in range(3):
+#     name=input("Enter name:")
+#     if name not in std:
+#         contact=input("Enter number:")
+#         std[name]=contact
+# # print(std)
+
+
+# i=2
+
+# while i<5:
+
+#     i=i+1
+
+#     print(i)
+
+#     i=i+1
+
+# print(i)
+
+
+
+
+
+# Ratings = ['4+', '9+', '12+', '17+', '4+', '12+', '4+', '9+', '17+', '12+', '4+', '17+']
+
+# content_ratings={}
+
+# for rating in Ratings:
+#     if rating in content_ratings:
+#         content_ratings[rating]+=1
+#     else:
+#         content_ratings[rating]=1
+# print(content_ratings)
