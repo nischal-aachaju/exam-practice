@@ -111,3 +111,81 @@
         
 # except ValueError:
 #     print("Please enter num")
+
+
+
+# ismember=(input("do you have membership card?(y/n) "))
+# print(ismember)
+# num=True
+# print(type(num))
+
+
+# marks = int(input("Enter student's marks: "))
+# if marks >= 90 and marks<= 100:
+#     grade = "A+"
+# elif marks >= 80 and marks <= 89:
+#     grade = "A"
+# elif marks >= 70 and marks <= 79:
+#     grade = "B+"
+# elif marks >= 60 and marks <= 69:
+#     grade = "B"
+# elif marks >= 50 and marks <= 59:
+#     grade = "C"
+# elif marks >= 40 and marks <= 49:
+#     grade = "D"
+# elif marks < 40:
+#     grade ="E"
+# else:
+#     grade = "Invalid marks"
+# print(f"Marks: {marks}")
+# print(f"Grade: {grade}")
+
+
+
+
+# num1=4
+# num2=4
+# num3=3
+# if(num1 ==num2 ==num3 ):
+#     print("all are equal")
+
+# elif num1!=num2 and num1!=num3 and num2!=num3:
+#     print("all are different") 
+    
+
+# else :
+#     print("two are equall")
+    
+    
+# import turtle
+
+# t = turtle.Turtle()
+# t.speed(1) # Set drawing speed (0 is fastest, 1 is slowest)
+
+# # Set multiple pen properties at once
+# t.pen(pencolor="red", pensize=5, fillcolor="blue")
+
+# t.forward(200)
+# t.left(90)
+# t.forward(100)
+
+# # Lift the pen, move without drawing, then put it down
+# t.penup()
+# t.forward(50)
+# t.pendown()
+
+# # Change color and continue drawing
+# t.pencolor("green")
+# t.forward(100)
+
+# turtle.done() # Keep the window open until clicked
+
+
+# from random import randint
+
+import random 
+
+
+num=random.randint(0,4)
+
+print(num)
