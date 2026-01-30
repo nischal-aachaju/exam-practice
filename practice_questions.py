@@ -320,20 +320,69 @@
 # print(answer)
 
 
-quiz={
+quiz = {
     "q1":{
-        "question":"CPU standes for",
-        "options":{"A":"Central processing unit","B":"center process unit", "C":"Center protocol Units"},
+        "question":"CPU stands for",
+        "options":{"A":"Central Processing Unit","B":"Center Process Unit","C":"Central Protocol Unit"},
         "answer":"A"
-        
     },
+
     "q2":{
-    "question":"CPU standes for",
-    "options":{"A":"Central processing unit","B":"center process unit", "C":"Center protocol Units"},
-    "answer":"A"
-    
+        "question":"RAM stands for",
+        "options":{"A":"Random Access Memory","B":"Read Access Memory","C":"Run Access Memory"},
+        "answer":"A"
     },
+
+    "q3":{
+        "question":"ROM stands for",
+        "options":{"A":"Read Only Memory","B":"Run Only Memory","C":"Random Only Memory"},
+        "answer":"A"
+    },
+
+    "q4":{
+        "question":"Which is an input device?",
+        "options":{"A":"Monitor","B":"Keyboard","C":"Speaker"},
+        "answer":"B"
+    },
+
+    "q5":{
+        "question":"Which is an output device?",
+        "options":{"A":"Printer","B":"Mouse","C":"Scanner"},
+        "answer":"A"
+    },
+
+    "q6":{
+        "question":"Which language is used for web page structure?",
+        "options":{"A":"Python","B":"HTML","C":"C++"},
+        "answer":"B"
+    },
+
+    "q7":{
+        "question":"Python is which type of language?",
+        "options":{"A":"Low level","B":"High level","C":"Machine level"},
+        "answer":"B"
+    },
+
+    "q8":{
+        "question":"Which operator is bitwise AND?",
+        "options":{"A":"&","B":"|","C":"^"},
+        "answer":"A"
+    },
+
+    "q9":{
+        "question":"Which data type is immutable in Python?",
+        "options":{"A":"List","B":"Dictionary","C":"Tuple"},
+        "answer":"C"
+    },
+
+    "q10":{
+        "question":"Which keyword is used to define function in Python?",
+        "options":{"A":"func","B":"define","C":"def"},
+        "answer":"C"
+    }
 }
+
+score=0
 
 for value in quiz.values():
     print(f"question: {value["question"]}")
@@ -342,6 +391,10 @@ for value in quiz.values():
     chooes=input("Chooes: ").upper()
     if chooes == value["answer"]:
         print("right")
+        score+=1
+        print(f"score={score}")
     else:
         print("Wrong")
+        score-=1
+        print(f"score={score}")
     
