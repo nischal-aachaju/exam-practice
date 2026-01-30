@@ -319,3 +319,29 @@
 
 # print(answer)
 
+
+quiz={
+    "q1":{
+        "question":"CPU standes for",
+        "options":{"A":"Central processing unit","B":"center process unit", "C":"Center protocol Units"},
+        "answer":"A"
+        
+    },
+    "q2":{
+    "question":"CPU standes for",
+    "options":{"A":"Central processing unit","B":"center process unit", "C":"Center protocol Units"},
+    "answer":"A"
+    
+    },
+}
+
+for value in quiz.values():
+    print(f"question: {value["question"]}")
+    for i,j in value["options"].items():
+        print(i,":",j)
+    chooes=input("Chooes: ").upper()
+    if chooes == value["answer"]:
+        print("right")
+    else:
+        print("Wrong")
+    
