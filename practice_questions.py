@@ -13,5 +13,29 @@
 # intersec=first_set.intersection(second_set)
 # print(intersec)
 
-# first_set=first_set-intersec
+# first_set=first_set.difference(intersec)
 # print(first_set)
+
+
+# month = {'jan': 47, 'feb': 52, 'march': 47,
+#          'April': 44, 'May': 52, 'June':53, 
+#          'july': 54, 'Aug': 44, 'Sept': 54}
+
+
+# lst=list(set(month.values()))
+
+# # lst={*()}
+# # for i in month.values():
+# #     lst.add(i)
+
+# # lst=list(lst)
+# print(lst)
+
+
+sample_list = [87, 45, 41, 65, 94, 41, 99, 94]
+tuple_list=tuple(set(sample_list))
+max_num=max(tuple_list)
+min_num=min(tuple_list)
+print("max num:",max_num)
+print("min num:",min_num)
+print(tuple_list)
