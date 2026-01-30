@@ -40,12 +40,12 @@
 # print("min num:",min_num)
 # print(tuple_list)
 
-applicant = { "name": "Priya", 
-             "skills":["Java", "SQL"],
-             "experience_years": 1
-             } 
+# applicant = { "name": "Priya", 
+#              "skills":["Java", "SQL"],
+#              "experience_years": 1
+#              } 
 
-required_skills = {"Python", "Java"} 
+# required_skills = {"Python", "Java"} 
 
 # for skill in applicant["skills"]:
 #     if skill in required_skills:
@@ -55,11 +55,58 @@ required_skills = {"Python", "Java"}
 #             print(f"{applicant["name"]} is not qualfyed")
 
 
-has_requierd_skill=len(set(applicant["skills"]).intersection(required_skills))>0
-has_experiences=applicant["experience_years"]>=2
+# has_requierd_skill=len(set(applicant["skills"]).intersection(required_skills))>0
+# has_experiences=applicant["experience_years"]>=2
 
-if has_experiences and has_requierd_skill:
-    print(f"{applicant['name']} is qualidied")
+# if has_experiences and has_requierd_skill:
+#     print(f"{applicant['name']} is qualidied")
 
-else:
-    print(f"{applicant['name']} is no qualidied")
+# else:
+#     print(f"{applicant['name']} is no qualidied")
+
+
+# banned_list={"scissors", "knife","lighter"}
+
+# bag_weight=float(input("Enter bag weight (kg only): "))
+# bag_items=input("Enter items which are in bag : ")
+# bag_items=bag_items.lower().strip().split()
+
+# is_bag_weight_satisfied=bag_weight<=7
+# is_bag_items_safe=len(set(bag_items).intersection(banned_list))==0
+
+# if is_bag_items_safe and is_bag_weight_satisfied:
+#     print("Bag accepted")
+
+# else :
+#     print("Bag not allowed")
+
+# group_A = {"Alice", "Bob", "Charlie", "David"}
+# group_B = {"Eve", "Frank", "Charlie", "Grace"}
+
+# if group_A.isdisjoint(group_B):
+#     print("Groups are OK – no overlap.")
+# else:
+#     print("warning: Groups share at least one student!")
+
+
+# sample_dict = {
+#     'emp1':{'name': 'Jhon', 'salary': 7500},
+#     'emp2': {'name': 'Emma', 'salary': 8000},
+#     'emp3': {'name':'Shyam', 'salary': 500}
+# }
+
+# for key,Value in sample_dict.items():
+#     if "Shyam" in Value["name"]:
+#             Value["salary"]=8500
+
+# print(sample_dict)
+
+
+# b=2000
+# a=2000
+
+# print(b is a)
+# c=[1,2,3]
+# d=[1,2,3]
+
+# print(c is d)
