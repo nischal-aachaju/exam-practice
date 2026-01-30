@@ -320,81 +320,130 @@
 # print(answer)
 
 
-quiz = {
-    "q1":{
-        "question":"CPU stands for",
-        "options":{"A":"Central Processing Unit","B":"Center Process Unit","C":"Central Protocol Unit"},
-        "answer":"A"
-    },
+# quiz = {
+#     "q1":{
+#         "question":"CPU stands for",
+#         "options":{"A":"Central Processing Unit","B":"Center Process Unit","C":"Central Protocol Unit"},
+#         "answer":"A"
+#     },
 
-    "q2":{
-        "question":"RAM stands for",
-        "options":{"A":"Random Access Memory","B":"Read Access Memory","C":"Run Access Memory"},
-        "answer":"A"
-    },
+#     "q2":{
+#         "question":"RAM stands for",
+#         "options":{"A":"Random Access Memory","B":"Read Access Memory","C":"Run Access Memory"},
+#         "answer":"A"
+#     },
 
-    "q3":{
-        "question":"ROM stands for",
-        "options":{"A":"Read Only Memory","B":"Run Only Memory","C":"Random Only Memory"},
-        "answer":"A"
-    },
+#     "q3":{
+#         "question":"ROM stands for",
+#         "options":{"A":"Read Only Memory","B":"Run Only Memory","C":"Random Only Memory"},
+#         "answer":"A"
+#     },
 
-    "q4":{
-        "question":"Which is an input device?",
-        "options":{"A":"Monitor","B":"Keyboard","C":"Speaker"},
-        "answer":"B"
-    },
+#     "q4":{
+#         "question":"Which is an input device?",
+#         "options":{"A":"Monitor","B":"Keyboard","C":"Speaker"},
+#         "answer":"B"
+#     },
 
-    "q5":{
-        "question":"Which is an output device?",
-        "options":{"A":"Printer","B":"Mouse","C":"Scanner"},
-        "answer":"A"
-    },
+#     "q5":{
+#         "question":"Which is an output device?",
+#         "options":{"A":"Printer","B":"Mouse","C":"Scanner"},
+#         "answer":"A"
+#     },
 
-    "q6":{
-        "question":"Which language is used for web page structure?",
-        "options":{"A":"Python","B":"HTML","C":"C++"},
-        "answer":"B"
-    },
+#     "q6":{
+#         "question":"Which language is used for web page structure?",
+#         "options":{"A":"Python","B":"HTML","C":"C++"},
+#         "answer":"B"
+#     },
 
-    "q7":{
-        "question":"Python is which type of language?",
-        "options":{"A":"Low level","B":"High level","C":"Machine level"},
-        "answer":"B"
-    },
+#     "q7":{
+#         "question":"Python is which type of language?",
+#         "options":{"A":"Low level","B":"High level","C":"Machine level"},
+#         "answer":"B"
+#     },
 
-    "q8":{
-        "question":"Which operator is bitwise AND?",
-        "options":{"A":"&","B":"|","C":"^"},
-        "answer":"A"
-    },
+#     "q8":{
+#         "question":"Which operator is bitwise AND?",
+#         "options":{"A":"&","B":"|","C":"^"},
+#         "answer":"A"
+#     },
 
-    "q9":{
-        "question":"Which data type is immutable in Python?",
-        "options":{"A":"List","B":"Dictionary","C":"Tuple"},
-        "answer":"C"
-    },
+#     "q9":{
+#         "question":"Which data type is immutable in Python?",
+#         "options":{"A":"List","B":"Dictionary","C":"Tuple"},
+#         "answer":"C"
+#     },
 
-    "q10":{
-        "question":"Which keyword is used to define function in Python?",
-        "options":{"A":"func","B":"define","C":"def"},
-        "answer":"C"
-    }
-}
+#     "q10":{
+#         "question":"Which keyword is used to define function in Python?",
+#         "options":{"A":"func","B":"define","C":"def"},
+#         "answer":"C"
+#     }
+# }
 
-score=0
+# score=0
 
-for value in quiz.values():
-    print(f"question: {value["question"]}")
-    for i,j in value["options"].items():
-        print(i,":",j)
-    chooes=input("Chooes: ").upper()
-    if chooes == value["answer"]:
-        print("right")
-        score+=1
-        print(f"score={score}")
-    else:
-        print("Wrong")
-        score-=1
-        print(f"score={score}")
+# for value in quiz.values():
+#     print(f"question: {value["question"]}")
+#     for i,j in value["options"].items():
+#         print(i,":",j)
+#     chooes=input("Chooes: ").upper()
+#     if chooes == value["answer"]:
+#         print("right")
+#         score+=1
+#         print(f"score={score}")
+#     else:
+#         print("Wrong")
+#         score-=1
+#         print(f"score={score}")
     
+#---binary searching
+
+# def binary_searching(arr,target):
+#     low=0
+#     high=len(arr)-1
+#     while low < high:
+#         mid=(low+high)//2
+#         if arr[mid]==target:
+#             print(mid)
+            
+#         elif target>mid:
+#             low=mid+1
+
+#         else:
+#             print("sfd")
+    
+
+# arr=list(range(1,101))
+# # print(arr)
+# target=int(input("Enter target: "))
+# binary_searching(arr,target)
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if arr[mid] == target:
+            return mid
+
+        elif arr[mid] < target:
+            low = mid + 1
+
+        else:
+            high = mid - 1
+
+    return -1
+
+arr = [1, 3, 5, 7, 9, 11, 13]
+target = 7
+
+result = binary_search(arr, target)
+
+if result != -1:
+    print("Element found at index:", result)
+else:
+    print("Element not found")
