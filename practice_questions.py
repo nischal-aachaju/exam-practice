@@ -514,3 +514,115 @@
 #     print("even")
 # else :
 #     print("odd")
+
+
+# nam="nischalShrestha"
+# len_name= lambda name:len(name)
+# print(len_name(nam))
+
+# x=2
+# y=3
+# z=4
+# max_num= lambda x,y,z:max(x,y,z)
+# print(max_num(x,y,z))
+
+'''2. You are managing an e-commerce inventory database. Given a list of product
+dictionaries, write a Python program using a filter() and lambda function to
+extract and display only the products that are currently in stock (instock: True)
+products = [
+ {'id': 1, 'name': 'laptop', 'category': 'electronics', 'price': 1200, 'instock': True},
+ {'id': 2, 'name': 'smartphone', 'category': 'electronics', 'price': 800, 'instock':
+False}
+]'''
+
+
+# products = [
+#  {'id': 1, 'name': 'laptop', 'category': 'electronics', 'price': 1200, 'instock': True},
+#  {'id': 2, 'name': 'smartphone', 'category': 'electronics', 'price': 800, 'instock':False},
+#  {'id': 3, 'name': 'PC', 'category': 'electronics', 'price': 1500, 'instock':True},
+#  ]
+
+# in_stock=list(filter(lambda x:x["instock"]==True,products ))
+# print(in_stock)
+
+
+"""3. Given a list of course dictionaries, write a Python program using a lambda function
+to filter and display only those courses that belong to the 'history' genre.
+course = [ {'title': 'Ancient Civilizations', 'genre': 'history'}, {'title': 'Corporate
+Finance', 'genre': 'commerce'}, {'title': 'Modern World History', 'genre': 'history'} ]
+    """
+# courses = [ {'title': 'Ancient Civilizations', 'genre': 'history'},
+#           {'title': 'CorporateFinance', 'genre': 'commerce'}, 
+#           {'title': 'Modern World History', 'genre': 'history'} ]
+
+# course_genre_history=list(filter(lambda course:course["genre"]=="history",courses))
+# print(course_genre_history)
+
+'''
+4. You have a list of blacklisted domains. Write a Python program using a lambda
+function to filter a list of emails and return only the ones that are considered spam
+those that match any domain in the blacklist.
+emails = ['ram.sharma@gmail.com', 'spam@hooya.com', 'virus@malware.net',
+‘shyam.kumar@workcorp.com’]
+blacklist = ('@hooya.com', '@malware.net')
+'''
+
+# emails = ['ram.sharma@gmail.com',
+#           'spam@hooya.com', 
+#           'virus@malware.net',
+#           'shyam.kumar@workcorp.com']
+
+# blacklist = ('@hooya.com', '@malware.net')
+
+# spam_email=list(filter(lambda email:(blacklist[0] in email) or (blacklist[1] in email),emails))
+
+# print(spam_email)
+
+'''5. Applying a 20% discount to all items in a shopping cart:
+price = [100, 50, 200, 75] implement using lambda function'''
+
+# price = [100, 50, 200, 75]
+
+# price_d=list(map(lambda x:int(x-x*0.2) ,price))
+
+# print(price_d)
+
+'''
+6. Create a function, skip_two that takes a list as input, and returns a list that: Starts
+with the second element of the input. While skipping every two elements. Does
+not keep any element whose index is greater than 11
+'''
+
+lst=["Nischal","Nirjal","samir","Anurag","Norman","1","2","3","4","5","6","7","8","9"]
+
+# def skip_two(lst):
+#     new_list=[]
+#     for i in range(1,11):
+#         new_list.append(lst[i])
+#     return new_list
+# print(skip_two(lst))
+
+"""7. Create a function, remove_at_idx, with the following features:
+ Takes a list as its first argument.
+ Takes a positive index as its second argument.
+ Removes the element at the given index and decreases the index of all
+subsequent elements by one.
+ Returns a new list
+    """
+# lst=["Nischal","Nirjal","samir","Anurag","Norman","1","2","3","4","5","6","7","8","9"]  
+
+# def remove_at_idx (lst,idx):
+#     new_lst=lst.copy()
+#     new_lst.pop(idx)
+#     return new_lst
+# idx=2
+# print(lst)
+# print(remove_at_idx(lst,idx))
+
+# lst=[4,2,6,2,8,9,4,2]
+
+# def he(l):
+#     return l+1
+
+# a=list(map(he,lst))
+# print(a)
