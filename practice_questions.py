@@ -420,30 +420,42 @@
 # target=int(input("Enter target: "))
 # binary_searching(arr,target)
 
-def binary_search(arr, target):
-    low = 0
-    high = len(arr) - 1
+# def binary_search(arr, target):
+#     low = 0
+#     high = len(arr) - 1
 
-    while low <= high:
-        mid = (low + high) // 2
+#     while low <= high:
+#         mid = (low + high) // 2
 
-        if arr[mid] == target:
-            return mid
+#         if arr[mid] == target:
+#             return mid
 
-        elif arr[mid] < target:
-            low = mid + 1
+#         elif arr[mid] < target:
+#             low = mid + 1
 
-        else:
-            high = mid - 1
+#         else:
+#             high = mid - 1
 
-    return -1
+#     return -1
 
-arr = [1, 3, 5, 7, 9, 11, 13]
-target = 7
+# arr = [1, 3, 5, 7, 9, 11, 13]
+# target = 7
 
-result = binary_search(arr, target)
+# result = binary_search(arr, target)
 
-if result != -1:
-    print("Element found at index:", result)
-else:
-    print("Element not found")
+# if result != -1:
+#     print("Element found at index:", result)
+# else:
+#     print("Element not found")
+
+
+# linear searching
+
+# lst=list(range(1,11))
+# target=6
+# idx=0
+# for i in lst:
+#     if target==i:
+#         print(f"Target found in {idx} index")
+#         break
+#     idx+=1
