@@ -459,3 +459,58 @@
 #         print(f"Target found in {idx} index")
 #         break
 #     idx+=1
+
+#Binary searching
+
+
+# def binary_searching(lst,target):   
+#     low=0
+#     high=len(lst)-1 
+#     while low <= high:
+#         mid=(low+high)//2
+#         if lst[mid]==target:
+#             print(f"Target found in {mid} index")
+#             break   
+#         elif lst[mid] < target:
+#             low=mid+1
+#         else:
+#             high=mid-1        
+#     else:
+#         print("Not found")
+        
+# binary_searching(list(range(1,21)),16)
+
+# from math import ceil, floor
+
+
+# a=7.8
+# print(floor(a))
+
+
+# def he():
+    
+#     a=5
+#     def hee():
+#         nonlocal a
+#         b=5
+#         print(a,b)
+#     hee()
+
+# he()
+
+#-------------- lambda function-----------
+# sum=lambda x,y:x+y
+# print(sum(2,4))
+
+
+# square =lambda x:x*x
+# print(square(3))
+
+# num= lambda x:x%2==0
+
+# even=num(7)
+# print(even)
+# if even:
+#     print("even")
+# else :
+#     print("odd")
