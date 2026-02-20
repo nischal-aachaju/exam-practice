@@ -593,7 +593,10 @@ with the second element of the input. While skipping every two elements. Does
 not keep any element whose index is greater than 11
 '''
 
-lst=["Nischal","Nirjal","samir","Anurag","Norman","1","2","3","4","5","6","7","8","9"]
+
+
+
+# lst=["Nischal","Nirjal","samir","Anurag","Norman","1","2","3","4","5","6","7","8","9"]
 
 # def skip_two(lst):
 #     new_list=[]
@@ -626,3 +629,24 @@ subsequent elements by one.
 
 # a=list(map(he,lst))
 # print(a)
+
+
+# try:
+#     num =int(input("Enter a number: "))
+
+#     result=100/num
+
+#     print(f" Result : {result}")
+    
+# except ValueError:
+#     print("value must be number")
+
+# except ZeroDivisionError:
+#     print("can't divied by zero")
+
+# except KeyboardInterrupt:
+#     print(" keyboard interrupt")
+
+# except Exception:
+#     print("Some went wrong")
+
