@@ -65,3 +65,63 @@
 #     print(f"Month: {months[num]}")
 # else:
 #     print("Invalid number")
+# from random import randint
+
+# snapple={
+
+# 0 :'Flamingos turn pink from eating shrimp.',
+# 1 : "The only food that doesn't spoil is honey.",
+# 2 : 'Shrimp can only swim backwards.',
+# 3 : "A taste bud's life span is about 10 days.",
+# 4 : 'It is impossible to sneeze while sleeping.',
+# 5 : 'It is illegal to sing off-key in North Carolina.'
+# }
+
+# num=randint(0,5)
+# print(snapple[num])
+
+# words=["ram","shyam","hari","rameshor"]
+# word_len=[]
+# for word in words:
+#     word_len.append(len(word))
+# print(word_len)
+
+# Ratings = ['4+', '9+', '12+', '17+', '4+', '12+', '4+', '9+', '17+', '12+', '4+', '17+']
+# content_rating={}
+
+# for rating in Ratings:
+#     if rating in content_rating:
+#         content_rating[rating]+=1
+#     else:
+#         content_rating[rating]=1
+# print(content_rating)
+
+from random import randint
+random_num=randint(1,50)
+attemp=7
+while True:
+    num=int(input("Enter number: "))
+    if num==random_num:
+        print("Correct")
+        
+        print(f"you correct in {7-attemp}")
+        attemp=attemp-1
+        break
+    elif attemp==0:
+        print("You lose")
+        print(f"{attemp} attemp left")
+        
+        break
+    
+    elif num>random_num:
+        
+        print("hint: try low value")
+        print("attemp left",attemp,"attemp")
+        attemp=attemp-1
+    elif num<random_num:
+        
+        print("hint:try high value")
+        print("attemp left",attemp,"attemp")
+        attemp=attemp-1
+
+    
