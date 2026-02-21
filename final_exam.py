@@ -207,9 +207,19 @@
 # print(len(vowel_found))
 
 
-num=int(input("Enter number: "))
+# num=int(input("Enter number: "))
 
-if (num//2)*2==num:
-    print("even")
-else:
-    print("odd")
+# if (num//2)*2==num:
+#     print("even")
+# else:
+#     print("odd")
+
+text="hlo345t!@#$23%^&*gfdrvfv%4tr32#w54"
+clean=""
+for i in text:
+    if i.isalnum():
+        clean+=i
+    else:
+        clean+="#"
+        
+print(clean)
