@@ -102,3 +102,29 @@
 # b=4
 # c=a/b
 # print(type(c))
+
+# numbers = ["t", "jk", 'jh', "y"]
+# new_list = sorted(numbers)
+
+# print(new_list)
+
+# print(numbers)
+
+# text = 1
+# print(id(text))
+
+# text = text + 1
+# print(text)
+# print(id(text))
+
+t = ([1, 2], 3)
+print(id(t))
+t[0].append(4)
+print(id(t))
+
+a=[1,1,2,2,2,3]
+a.remove(2)
+print(a)
+b=(1,2,2,3)
+c=b.count(2)
+print(c)
