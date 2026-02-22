@@ -51,10 +51,28 @@
 
 # print(merge_dict)
 
-dic={ 2: 20, 3: 30, 6: 60, 4: 40,1: 10, 5: 50}
+# dic={ 2: 20, 3: 30, 6: 60, 4: 40,1: 10, 5: 50}
 
-ass_dict=dict(sorted(dic.items(),key=lambda i:i[1],reverse=True))
-print(ass_dict)
+# ass_dict=dict(sorted(dic.items(),key=lambda i:i[1],reverse=True))
+# print(ass_dict)
 
-a=(1,2),(2,4)
-print(dict(a))
+# a=(1,2),(2,4)
+# print(dict(a))
+
+
+# from functools import reduce
+
+
+# Lst = [8, 2, 3, 0, 7]
+# sum=reduce(lambda x,y:x+y,Lst)
+
+# print(sum)
+
+a=["heello","hii"]
+b=["oii","yes"]
+a.extend(b)
+print(a)
+x=[]
+x.extend({"ds":"sd","S":"sdf"})
+
+print(x)

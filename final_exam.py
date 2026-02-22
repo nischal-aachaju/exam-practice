@@ -214,12 +214,12 @@
 # else:
 #     print("odd")
 
-text="hlo345t!@#$23%^&*gfdrvfv%4tr32#w54"
-clean=""
-for i in text:
-    if i.isalnum():
-        clean+=i
-    else:
-        clean+="#"
+# text="hlo345t!@#$23%^&*gfdrvfv%4tr32#w54"
+# clean=""
+# for i in text:
+#     if i.isalnum():
+#         clean+=i
+#     else:
+#         clean+="#"
         
-print(clean)
+# print(clean)
